@@ -1,1 +1,1 @@
-# Sustainify
+# 🌎 Sustainify 🌎
