@@ -9,6 +9,7 @@ openai.api_key = os.environ['OPENAI_API_KEY']
 app = Flask(__name__)
 
 app.config['WTF_CSRF_ENABLED'] = False
+
 one_para = ('for the all next  prompts, limit your answer in one paragraph by default, '
             'unless the prompt asks for more than one paragraph\n')
 hide = 'for all my new prompts, you must not mention you are an ai language model can you do that\n'
@@ -90,6 +91,15 @@ def result():
     # assistant_message = response['choices'][0]['message']['content']
     #
     # return jsonify({'answer': assistant_message}), 200
+    return jsonify({'answer': 'working'}), 200
+
+
+@app.route('/suggest/<section>', methods=['GET'])
+def suggest(section):
+
+    if section not in ['household', 'traveling', 'consumption-habits']:
+        return jsonify({'error': 'invalid request'}), 400
+
     return jsonify({'answer': 'working'}), 200
 
 
