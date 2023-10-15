@@ -54,6 +54,8 @@ export const Survey = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setLoading(true);
+        const currentDate = new Date();
+
         const postData = {
             userId: user_id,
             totalScore: total,
@@ -86,6 +88,7 @@ export const Survey = () => {
                 userID: user_id,
                 cFootprint: cfootprint,
                 description: description,
+                date: currentDate.toISOString()
               });
               
             console.log('Data sent to the backend:', response.data);

@@ -20,18 +20,34 @@ export const Home = () => {
   const [carbonFootPrint, setCarbonFootPrint] = useState(null);
   const [pastFootprints, setPastFootprints] = useState([]);
 
+  // useEffect(() => {
+  //   const q = query(
+  //     collection(db, "carbonFootprints")
+  //   )
+  //   onSnapshot(q, (querySnapshot) => {
+  //     const cfoots = querySnapshot.docs.map((doc) => ({
+  //       id: doc.id,
+  //       ...doc.data(),
+  //     }))
+  //     setPastFootprints(cfoots);
+  //   })
+  // })
+
   useEffect(() => {
-    const q = query(
-      collection(db, "carbonFootprints")
-    )
+    const q = query(collection(db, "carbonFootprints"));
     onSnapshot(q, (querySnapshot) => {
-      const cfoots = querySnapshot.docs.map((doc) => ({
-        id: doc.id,
-        ...doc.data(),
-      }))
+      const cfoots = querySnapshot.docs
+        .map((doc) => ({
+          id: doc.id,
+          ...doc.data(),
+        }))
+        .sort((a, b) => {
+          // Sort in descending order based on the date
+          return new Date(b.date) - new Date(a.date);
+        });
       setPastFootprints(cfoots);
-    })
-  })
+    });
+  }, []);
 
   const signUserOut = async () => {
     await signOut(auth);
