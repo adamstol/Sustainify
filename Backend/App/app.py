@@ -1,7 +1,9 @@
 from flask import Flask, request, jsonify, render_template
+from flask_cors import CORS
 import openai
 import os
 from dotenv import load_dotenv
+
 
 load_dotenv()
 openai.api_key = os.environ['OPENAI_API_KEY']
@@ -9,7 +11,7 @@ openai.api_key = os.environ['OPENAI_API_KEY']
 app = Flask(__name__)
 
 app.config['WTF_CSRF_ENABLED'] = False
-
+CORS(app)
 one_para = ('for the all next  prompts, limit your answer in one paragraph by default, '
             'unless the prompt asks for more than one paragraph\n')
 hide = 'for all my new prompts, you must not mention you are an ai language model can you do that\n'
@@ -34,13 +36,14 @@ def is_sustainability_related(message):
 
 @app.route("/")
 def home():
-    return render_template("index.html")
+    return render_template("/../../Frontend/src/static/public/index.html")
 
 
 @app.route('/ask', methods=['POST'])
 def ask():
+    print('post')
     data = request.get_json()
-
+    print('json')
     if not data or 'message' not in data:
         return jsonify({'error': 'Message is required'}), 400
 
