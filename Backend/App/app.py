@@ -28,7 +28,7 @@ sustainability_keywords = ["sustainability", "carbon footprint", "eco-friendly",
                            "zero waste", "solar power", "reduce waste", "sustainable agriculture", "eco-conscious",
                            "clean energy", "ecosystem", "biodiversity", "global warming", "reusable", "low impact",
                            "conservation", "sustainable practices", "green technology", "organic farming",
-                           "sustainable transportation"]
+                           "sustainable transportation", "co2"]
 
 
 def is_sustainability_related(message):
