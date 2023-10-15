@@ -3,12 +3,12 @@ from flask_cors import CORS
 from flask_cors import cross_origin
 import openai
 import os
-# from dotenv import load_dotenv
+from dotenv import load_dotenv
 
 
-# load_dotenv()
-# openai.api_key = os.environ['OPENAI_API_KEY']
-openai.api_key = "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"
+load_dotenv()
+openai.api_key = os.environ['OPENAI_API_KEY']
+
 
 app = Flask(__name__)
 
