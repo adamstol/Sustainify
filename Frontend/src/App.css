@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&family=Poppins:wght@400;500;600&display=swap');
+
+.body {
+  font-family: "Crimson Text", serif;
+}
+
+.chat-body {
+  width: 80%;
+  height: 400px;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 50px;
+  border-radius: 10px;
+  border-color: #23c686;
+  border-style: solid;
+  border-width: 1px;
+  overflow-y: scroll;
+}
+
+.user-text {
+  background-color: #23c686;
+  color: white;
+  border-radius: 10px;
+  padding: 4px;
+  margin-top: 5px;
+  width: 40%;
+  align-self: flex-end;
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.bot-text {
+  background-color:beige;
+  padding: 4px;
+  width: 40%;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.ecoguide {
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.calculate {
+  background-color: #fc9d45;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 20px;
+  color: white;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.earth {
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.action {
+  font-size: 30px;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.profile-container {
+  margin-top: 40px;
+}
+
+.profile {
+  margin-top: 40px;
+  background-color: white;
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  width: 80%;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.my-profile {
+  font-weight: bold;
+  font-size: 25px;
+  margin-left: 10px;
+  margin-bottom: 25px;
+}
+
+.user-container {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.username {
+  margin-right: 10px;
+}
+
+.user-info img {
+  margin-right: 20px; /* Adjust the margin as needed for spacing */
+  border-radius: 15px;
+}
+
+.button-container {
+   /* Adjust this value to vertically center the button as needed */
+  margin-left: 10px; /* Adjust this value to control the button's distance from the right side */
+
+}
+
+.logout {
+  background-color: #23c686;
+  padding: 4px 7px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.pcarbon {
+  margin-left: 10px;
+  margin-top: 30px;
+  font-size: 23px;
+}
+
+.what {
+  margin-left: 10px;
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.text {
+  margin-left: 10px;
+  margin-top: 30px;
+  font-size: 16px;
+  margin-bottom: 10px;  
+}
+
+.check {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  border-radius: 2px;
+  appearance: none;
+  background-color: #bbb;
+  transition: all .3s;
+  margin-right: 5px;
+  cursor: pointer;
+ }
+ 
+ .check::before {
+  content: '';
+  position: absolute;
+  border: solid #fff;
+  display: block;
+  width: .3em;
+  height: .6em;
+  border-width: 0 .2em .2em 0;
+  z-index: 1;
+  opacity: 0;
+  right: calc(50% - .2em);
+  top: calc(50% - .4em);
+  transform: rotate(0deg);
+  transition: all .3s;
+  transform-origin: center center;
+ }
+ 
+ .check:checked {
+  animation: a .3s ease-in forwards;
+  background-color: rgb(120, 190, 120);
+ }
+ 
+ .check:checked::before {
+  opacity: 1;
+  transform: rotate(405deg);
+ }
+ 
+ @keyframes a {
+  0% {
+   opacity: 1;
+   transform: scale(1) rotateY(0deg);
+  }
+ 
+  50% {
+   opacity: 0;
+   transform: scale(.8) rotateY(180deg);
+  }
+ 
+  100% {
+   opacity: 1;
+   transform: scale(1) rotateY(360deg);
+  }
+ }
+
+ .result-container {
+  background-color: white;
+  padding: 5px;
+  border-radius: 10px;
+  width: 50%;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border-color:#23c686;
+  border-style: solid;
+  border-width: 1px;
+ }
+
+ .past {
+  margin-left: 10px;
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: bold;
+ }
+ 
+ .description {
+  line-height: 2; /* Adjust this value as needed for better readability */
+}
+
+
+
+
