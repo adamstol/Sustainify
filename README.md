@@ -1,4 +1,4 @@
-# 🌎 Sustainify 🌎
+# 🌎 Sustainify 🌎 HTV 8 Winner 🏅
 ## A Greener and Smarter Way to Save the Planet
 
 ## Demo Video ▶️
