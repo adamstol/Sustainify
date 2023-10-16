@@ -1,6 +1,10 @@
 # 🌎 Sustainify 🌎
 ## A Greener and Smarter Way to Save the Planet
 
+## Demo Video ▶️
+
+[![Sustainify HTV8 Demo Video 2023](https://img.youtube.com/vi/yn9bvSDo2FU/0.jpg)](https://youtu.be/m0tPo_iEjow)
+
 ## Inspiration 🌎
 
 Each person produces 4.7 tonnes of carbon dioxide each year worldwide. This is roughly the size of an adult African elephant in just CO2 gas. Carbon dioxide is the main greenhouse gas which causes global warming. Since 1961 humanity’s carbon footprint has increased over eleven times. This Hack The Valley our team wanted to innovate saving the environment using AI.
