@@ -38,3 +38,7 @@ We're really proud of integrating AI into our project. No one on our team previo
 ## What's next for Sustainify ➡️❓
 
 Our next steps for Sustainify is to turn it into a game and make saving the environment fun. The less you emit the more points you get and you can compete against your family and friends.
+
+## HTV8 Winner 🏅
+
+Won MLH's prize for Best .Tech Domain Name
