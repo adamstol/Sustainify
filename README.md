@@ -3,7 +3,7 @@
 
 ## Demo Video ▶️
 
-[![Sustainify HTV8 Demo Video 2023](https://img.youtube.com/vi/yn9bvSDo2FU/0.jpg)](https://youtu.be/m0tPo_iEjow)
+[![Sustainify HTV8 Demo Video 2023](https://img.youtube.com/vi/m0tPo_iEjow/0.jpg)](https://youtu.be/m0tPo_iEjow)
 
 ## Inspiration 🌎
 
